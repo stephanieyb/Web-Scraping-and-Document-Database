@@ -19,9 +19,5 @@ o	Visit the USGS Astrogeology site (https://astrogeology.usgs.gov/search/results
 o	Save both the image url string for the full resolution hemisphere image, and the Hemisphere title containing the hemisphere name. Use a Python dictionary to store the data using the keys `img_url` and `title`. 
 o	 Append the dictionary with the image url string and the hemisphere title to a list. This list will contain one dictionary for each hemisphere.
 <p><b>Step 2 - MongoDB and Flask Application</b></p>
-<p>o	Use MongoDB with Flask templating to create a new HTML page that displays all of the information that was scraped from the URLs above.
-o	convert notebook into a Python script called `scrape_mars.py` with a function called `scrape` that will execute all of scraping code from above and return one Python dictionary containing all of the scraped data.
-o	Create a route called `/scrape` that imports your `scrape_mars.py` script and call  `scrape` function. 
-o	 Store the return value in Mongo as a Python dictionary. 
-o	 Create a root route `/` that queries your Mongo database and pass the mars data into an HTML template to display the data.
-o	 Create a template HTML file called `index.html` that takes the mars data dictionary and display all of the data in the appropriate HTML elements. 
+<p>Use MongoDB with Flask templating to create a new HTML page that displays all of the information that was scraped from the URLs above.
+
